@@ -2,11 +2,11 @@ import { Client } from 'https://deno.land/x/postgres/mod.ts';
 import { QueryResult, QueryConfig } from 'https://deno.land/x/postgres/query.ts';
 
 const client = new Client({
-    hostname : "arjuna.db.elephantsql.com",
+    hostname : "localhost",
     port : 5432,
-    user : "fftlnlsj",
-    password : "AVnRLe7sjF3hC0_mH0QNvOuuj4EPtz4k",
-    database : "fftlnlsj"
+    user : "postgres",
+    password : "12345",
+    database : "blog"
 });
 
 export async function select(qry : QueryConfig | QueryConfig[]) {
